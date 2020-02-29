@@ -59,10 +59,15 @@ public class Engenheiro {
     public void ExcluirEngenheiro() throws IOException{
             ConsultarEngenheiro();
             System.out.println("\n\tRemover Engenheiro");
+                       
             
-            System.out.print("Escreva nome do arquivo do engenheiro a ser removida: ");
+            System.out.print("ID do engenheiro a ser removida: ");
             String nomeEngEx = tec.nextLine();
             
+            File file = new File("C:/GestaoDeObras/Engenheiros/" + nomeEngEx);
+            
+            file.getName().startsWith(nomeEngEx); //pegando o Engenheiro pelo ID
+                    
             System.out.print("Tem certeza que deseja excluir: " + nomeEngEx + "? [S/N]: ");
             String resposta = tec.nextLine();
             

@@ -19,7 +19,7 @@ public class GestaoDeObras {
         Engenheiro eng = new Engenheiro();
         
         System.out.print("1)Cadastrar Obra\n2)Consultar Obra\n3)Excluir Obra\n"
-                + "4)Cadastrar Engenheiro\n5)Consultar Engenheiro\n6)Excluir Engenheiro\n"
+                + "4)Cadastrar Engenheiro\n5)Consultar Engenheiro\n6)Excluir Engenheiro\n7)Alterar Obra\n"
                 + "Excolha: ");
         int escolha = r.nextInt();
         
@@ -41,6 +41,9 @@ public class GestaoDeObras {
                 break;
             case 6:
                 eng.ExcluirEngenheiro();
+                break;
+            case 7:
+                o.AlterarObra();
                 break;
             default:
                 System.out.println("Opçao invalida");
